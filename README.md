@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+## Menu Online
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de um menu online para um restaurante, onde os usuários podem navegar pelos produtos disponíveis, divididos em categorias como comida e bebidas. Os usuários podem selecionar um ou mais produtos, e o sistema calculará o total do pedido. Além disso, os usuários podem enviar o pedido para o WhatsApp do restaurante, juntamente com o número da mesa.
 
-Currently, two official plugins are available:
+### Como Rodar o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Siga os passos abaixo para rodar o projeto localmente:
 
-## Expanding the ESLint configuration
+1. Clone este repositório:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```git clone https://github.com/Amiltonxavier/menuOnline ```
 
-- Configure the top-level `parserOptions` property like this:
+2. Navegue até o diretório do projeto:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+``` cd menu-restaurante```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+3. Instale as dependências:
+
+```npm i ```
+
+
+4. Inicie o servidor de desenvolvimento:
+
+ ```npm run dev ```
+
+
+5. Abra o navegador e acesse `http://localhost:5173` para visualizar o projeto.
+
+### Estrutura do Projeto
+
+O projeto está organizado da seguinte maneira:
+
+- **`src/`**: Contém todos os arquivos fonte do projeto.
+- **`components/`**: Componentes reutilizáveis.
+- **`App.tsx`**: Componente principal da aplicação.
+- **`index.tsx`**: Arquivo de entrada da aplicação.
+- **`public/`**: Contém arquivos estáticos, como imagens e ícones.
+- **`package.json`**: Arquivo de manifesto do Node.js que lista as dependências do projeto.
+- **`README.md`**: Este arquivo, que contém informações sobre o projeto e instruções de uso.
+
+### Tecnologias Utilizadas
+
+- React
+- TypeScript
+
+Este projeto serve como um exemplo de aplicação web construída com React e TypeScript, demonstrando boas práticas de organização de código, componentização e separação de responsabilidades.
+
+Divirta-se explorando o menu online!
+
