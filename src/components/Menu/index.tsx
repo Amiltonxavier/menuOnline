@@ -1,15 +1,19 @@
 import React from 'react'
-import {Produts} from "../../constants";
-import { MenuItem } from '../MenuItem';
+import { Produts } from "../../constants";
+import { Item } from '../Item';
 
-export  function Menu() {
+export function Menu() {
   return (
-    <div>
-        {
-          Produts.map((item) => (
-            <MenuItem key={item.id} data={item} />
-          ))
-        }
+    <div className='grid grid-cols-2 gap-8 p-8'>
+
+      {
+
+        Produts.map((item) => (
+          <Item key={item.id} data={item} />
+        ))
+      }
+
+
     </div>
   )
 }
